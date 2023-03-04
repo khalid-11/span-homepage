@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- font family  -->
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- normalize.css -->
+  <link rel="stylesheet" href="css/nprmalize.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="overlay "></div>
+    <nav>
+      <div class="contaier-fluid px-4 px-lg-0 d-flex align-items-center justify-content-between">
+        <!-- left side logo - dropdowns - links -->
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="logo-holder">
+            <img src="images/logo.svg" width="100" alt="snap website logo" class="logo">
+          </div>
+          <!-- navlinks -->
+          <div class="navlinks d-none d-md-flex align-items-center justify-content-md-between ">
+            <div class="dropdown ">
+              <a class="btn p-0 btn-transparent border-0 outline-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+              </a>
+            
+              <ul class="dropdown-menu mt-4 border-0">
+                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <img class="me-3" src="images/icon-todo.svg" width="100" alt=" todo list icon"><span>todo list</span>
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <img class="me-3" src="images/icon-calendar.svg" width="100" alt=" todo list icon"><span>calendar</span>
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <img class="me-3" src="images/icon-reminders.svg" width="100" alt=" todo list icon"><span>reminders</span>
+                </a></li>
+                <li><a class="dropdown-item d-flex align-items-center" href="#">
+                  <img class="me-3" src="images/icon-planning.svg" width="100" alt=" todo list icon"><span>planning</span>
+                </a></li>
+
+              </ul>
+            </div>
+            <div class="dropdown ">
+              <a class="btn p-0 btn-transparent border-0 outline-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Company
+              </a>
+            
+              <ul class="dropdown-menu mt-4 border-0">
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Our Team</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="link"><a href="">Careers</a></div>
+            <div class="link"><a href="">About</a></div>
+          </div>
+        </div>
+        <!-- right side - toggler or login btns -->
+        <div class="d-flex">
+          <button class="navbar_toggler d-md-none mb-2" id="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="regesteration d-none d-md-flex">
+            <button class="btn btn-transparent ">Login</button>
+            <button class="btn border-dark btn-light ">Register</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- MOBILE MENU -->
+      <div class="mobile-menu d-flex d-md-none" id="toggle-nav">
+        
+        <div class="close d-none" id="toggle-close">
+          <i class="fas fa-close"></i>
+        </div>
+        <!-- navlinks -->
+        <div class="navlinks d-md-flex align-items-center justify-content-md-between ">
+          <div class="dropdown ">
+            <a class="btn p-0 btn-transparent border-0 outline-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Features
+            </a>
+          
+            <ul class="dropdown-menu position-relative position-md-absolute mt-0 mt-md-2 border-0">
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                <img class="me-3" src="images/icon-todo.svg" width="100" alt=" todo list icon"><span>todo list</span>
+              </a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                <img class="me-3" src="images/icon-calendar.svg" width="100" alt=" todo list icon"><span>calendar</span>
+              </a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                <img class="me-3" src="images/icon-reminders.svg" width="100" alt=" todo list icon"><span>reminders</span>
+              </a></li>
+              <li><a class="dropdown-item d-flex align-items-center" href="#">
+                <img class="me-3" src="images/icon-planning.svg" width="100" alt=" todo list icon"><span>planning</span>
+              </a></li>
+
+            </ul>
+          </div>
+          <div class="dropdown ">
+            <a class="btn p-0 btn-transparent border-0 outline-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+          
+            <ul class="dropdown-menu position-relative position-md-absolute mt-0 mt-md-2 border-0">
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Our Team</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="link"><a href="">Careers</a></div>
+          <div class="link"><a href="">About</a></div>
+        </div>
+        <div class="regesteration d-md-flex">
+          <button class="btn">Login</button>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="row container mx-auto flex-column-reverse flex-md-row">
+      <article class="col-12 col-md-7 d-flex flex-column text-center  text-md-start align-items-center align-items-md-start justify-content-end " >
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="btn border border-dark rounded-4 btn-dark">Learn More</button>
+        <div class="logos d-flex align-items-center row align-slef-center ">
+          <div class="col">
+            <img src="images/client-audiophile.svg" alt="audiophile ">
+          </div>
+          <div class="col">
+            <img src="images/client-databiz.svg" alt="databiz ">
+          </div>
+          <div class="col">
+            <img src="images/client-maker.svg" alt="maker">
+          </div>
+          <div class="col">
+            <img src="images/client-meet.svg" alt="meet">
+          </div>
+        </div>
+      </article>
+      
+      <figure class="col-12 col-md-5" >
+        <img class="d-none d-md-block" src="images/image-hero-desktop.png" alt="some chapes with a man on his feets holding laptop">
+        <img class="d-md-none" src="images/image-hero-mobile.png" alt="some chapes with a man on his feets holding laptop">
+        <figcaption >some chapes with a man on his feets holding laptop</figcaption>
+      </figure>
+    </section>
+  </main>
+
+<footer class="text-center">
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">khalid</a>.
+  </div>
+</footer>
+  <!-- fontawesome -->
+  <script src="js/all.min.js"></script>
+  <!-- bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- js -->
+  <script src="js/main.js"></script>
+</body>
+</html>

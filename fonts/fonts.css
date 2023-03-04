@@ -1,0 +1,12 @@
+@font-face{
+  font-family:'PublicSans';
+  src: url(PublicSans-VariableFont_wght.ttf);
+}
+@font-face{
+  font-family:'Nunito';
+  src: url(Nunito-VariableFont_wght.ttf);
+}
+@font-face{
+  font-family:'WorkSans';
+  src: url(WorkSans-VariableFont_wght.ttf);
+}
