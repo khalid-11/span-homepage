@@ -68,7 +68,22 @@ section{
   padding-top:2rem;
 }
 
-/* nav */
+.overlay{
+  display: none;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  background:#33333342;
+  top:0;
+  left:0;
+  transition:.3s ease-in-out;
+  -webkit-transition:.3s ease-in-out;
+  -moz-transition:.3s ease-in-out;
+  -ms-transition:.3s ease-in-out;
+  -o-transition:.3s ease-in-out;
+}
+
+/* -----  nav start ----- */
 
 nav .contaier-fluid{
   max-width: 85rem;
@@ -82,6 +97,8 @@ nav .contaier-fluid{
   }
 }
 
+/* logo */
+
 .logo-holder{
   margin-right:4rem;
 }
@@ -90,8 +107,16 @@ nav .contaier-fluid{
   max-width: 5.31rem;
 }
 
+/* navlinks */
 .navlinks > *{
   margin-right: 1.5625rem;
+}
+.navlinks a{
+  color: #4e4e4e;
+  transition: color .3s ease-in-out;
+}
+.navlinks a:hover{
+  color:#000;
 }
 
 .navbar_toggler > span{
@@ -107,30 +132,11 @@ nav .contaier-fluid{
   -o-border-radius: 0.09375rem;
 }
 
-
-main .container{
-  max-width: 73.125rem;
-}
-
-article p {
-  font-size:1.125rem;
-  line-height: 1.5;
-  max-width: 28.125rem;
-  margin-bottom: 3rem;
-}
-article .btn{
-  margin-bottom: 6.25rem ;
-  padding: 1rem 2rem;
-}
-article .btn:hover{
-  background-color: #fff;
-  color:black;
-  border-color: #000
-}
 .dropdown-menu{
   margin-top:1rem;
   box-shadow:  0 0 0.625rem 0.625rem #3333331f;
 }
+
 .dropdown-item img{
   max-width: 1rem ;
 }
@@ -142,6 +148,9 @@ article .btn:hover{
   border-left: 0.3em solid transparent;
   transform: translateY(0);
 }
+
+/*  MOBILE MENU  */
+
 @media(max-width:47.9375rem){
   .mobile-menu{
     top:0;
@@ -184,13 +193,8 @@ article .btn:hover{
   .regesteration{
     flex-direction:column;
   }
-  .regesteration button{
-    display:block;
-    margin-top: 1.875rem;
-  }
 
 }
-
 
 .regesteration button:not(:first-child){
   padding-block: 0.75rem;
@@ -224,17 +228,28 @@ article .btn:hover{
   -o-transition:.2s ease-in-out;
 }
 
-.overlay{
-  display: none;
-  position:absolute;
-  width:100vw;
-  height:100vh;
-  background:#33333342;
-  top:0;
-  left:0;
-  transition:.3s ease-in-out;
-  -webkit-transition:.3s ease-in-out;
-  -moz-transition:.3s ease-in-out;
-  -ms-transition:.3s ease-in-out;
-  -o-transition:.3s ease-in-out;
+/* -----  nav end ----- */
+
+/* ----- main start ----- */
+
+main .container{
+  max-width: 73.125rem;
 }
+
+article p {
+  font-size:1.125rem;
+  line-height: 1.5;
+  max-width: 28.125rem;
+  margin-bottom: 3rem;
+}
+article .btn{
+  margin-bottom: 6.25rem ;
+  padding: 1rem 2rem;
+}
+article .btn:hover{
+  background-color: #fff;
+  color:black;
+  border-color: #000
+}
+
+/* ----- main end ----- */
